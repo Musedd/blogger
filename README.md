@@ -4,6 +4,14 @@
 This project is a fullstack blog application built with modern web technologies.  
 It provides a main page where blog posts are displayed to visitors, as well as an admin page for performing administrative tasks such as creating and managing posts.
 
+Main Page:
+<img width="1777" height="973" alt="image" src="https://github.com/user-attachments/assets/0ac5fd95-b165-41b9-a0a7-3cbd0c8fdf08" />
+
+Admin Page:
+
+<img width="1686" height="957" alt="image" src="https://github.com/user-attachments/assets/b2c5f1c2-047f-487d-9c1f-406b44a02b9b" />
+
+
 ---
 
 ## Tech Stack

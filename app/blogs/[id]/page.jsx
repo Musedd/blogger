@@ -4,20 +4,19 @@ import Footer from '@/Components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
+import axios from 'axios';  
 
 const page = ({params}) => {
 
     const [data,setData] = useState(null);
 
-    const fetchBlogData = () => {
-        for(let i=0;i<blog_data.length;i++)
-        {
-            if (Number(params.id)===blog_data[i].id) {
-                setData(blog_data[i]);
-                console.log(blog_data[i]);
-                break;
+    const fetchBlogData = async () => {
+        const response = await axios.get('/api/blog', {
+            params:{
+                id:params.id
             }
-        }
+        })
+        setData(response.data);
     }
 
     useEffect(() => {

@@ -12,10 +12,16 @@ LoadDB();
 
 // API Endpoint to get all blogs
 export async function GET(request){
-    
-    const blogs = await BlogModel.find({});
 
-    return NextResponse.json({blogs})
+    const blogId = request.nextUrl.searchParams.get("id");
+    if (blogId) {
+        const blog = await BlogModel.findById(blogId);
+        return NextResponse.json(blog);
+    } else {
+        const blogs = await BlogModel.find({});
+        return NextResponse.json({blogs})
+    }
+    
 }
 
 // API Endpoint for Uploading blogs

@@ -41,7 +41,6 @@ Admin Page:
 ## Project Structure
 
 The main project is located on the **`master` branch**.  
-Other branches may contain experiments, feature work, or migration history.  
 
 ---
 

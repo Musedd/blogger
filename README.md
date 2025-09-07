@@ -66,5 +66,4 @@ MONGODB_URI=your_mongodb_connection_string
    npm run dev
    ```
 
-#License
-This proj
+
